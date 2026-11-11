@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Q2 Seatwork 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+ 
+ <style>
+        body {
+           
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                        url('https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/affba656-d015-4b96-a8ba-3ef5bbbc2c39/OBMC+MONTESSORI+GH+-+AY+2026+FA.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            font-family: sans-serif;
+        }
+       
+        .custom-navbar {
+            background-color: #212529;
+            padding: 10px 20px;
+        }
+        .navbar-brand img {
+            border-radius: 50%;
+            background-color: white;
+            padding: 2px;
+        }
+        .nav-link-custom {
+            color: #fff;
+            text-decoration: none;
+        }
+        .nav-link-custom:hover {
+            color: #ccc;
+        }
+   
+        .hours-header {
+            background-color: #bbdefb;
+            color: #0d47a1;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 12px;
+            text-align: center;
+        }
+        .table-custom {
+            background-color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 0;
+        }
+        .table-custom th {
+            background-color: #0d47a1;
+            color: white;
+            font-weight: bold;
+        }
+       
+        .contact-card {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .contact-card h2 {
+            color: #333;
+            font-weight: normal;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-label {
+            color: #555;
+            font-size: 0.9rem;
+            margin-bottom: 4px;
+        }
+        .btn-send {
+            background-color: #2979ff;
+            border: none;
+            padding: 10px;
+            font-weight: 500;
+        }
+        .btn-send:hover {
+            background-color: #2962ff;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <nav class="custom-navbar d-flex justify-content-between align-items-center mb-5">
+        <div class="d-flex align-items-center gap-3">
+            <a class="navbar-brand m-0" href="#">
+              
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhGWMliic2yX4A8KaM5AP99wxYDDubpMTUsDhyHWKdYmoUUNZZYomypEc&s=10" alt="Logo" width="40" height="40">
+            </a>
+            <a href="#" class="nav-link-custom small">Home</a>
+            <a href="#" class="nav-link-custom small">About Us</a>
+            <a href="#" class="nav-link-custom small">Enroll</a>
+            <a href="#" class="nav-link-custom small">Contact Us</a>
+        </div>
+        <div class="d-flex gap-2" style="max-width: 400px; width: 100%;">
+            <input type="text" class="form-control form-control-sm rounded-0" placeholder="Search">
+            <button class="btn btn-primary btn-sm rounded-0 px-4" type="button">Search</button>
+        </div>
+    </nav>
+
+
+    <div class="container my-5">
+        <div class="row gy-4 align-items-start">
+            
+
+            <div class="col-lg-7">
+                <div class="shadow rounded overflow-hidden">
+                    <div class="hours-header">
+                        School Office Hours
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-custom table-bordered text-center align-middle mb-0">
+                            <thead>
+                                <tr>
+                                    <th scope="col" style="width: 25%;">Day</th>
+                                    <th scope="col" style="width: 40%;">Office Hours</th>
+                                    <th scope="col" style="width: 35%;">Department</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="fw-bold">Monday</td>
+                                    <td>8:00 AM - 4:00 PM</td>
+                                    <td>Registrar's Office</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Tuesday</td>
+                                    <td>8:00 AM - 4:00 PM</td>
+                                    <td>Accounting Office</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Wednesday</td>
+                                    <td>8:00 AM - 4:00 PM</td>
+                                    <td>Guidance Office</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Thursday</td>
+                                    <td>8:00 AM - 4:00 PM</td>
+                                    <td>Principal's Office</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Friday</td>
+                                    <td>8:00 AM - 3:00 PM</td>
+                                    <td>Admin Office</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="contact-card">
+                    <h2>Contact Us</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control shadow-sm" id="fullName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailAddress" class="form-label">Email Address</label>
+                            <input type="email" class="form-control shadow-sm" id="emailAddress" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control shadow-sm" id="subject" placeholder="Enter subject" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control shadow-sm" id="message" rows="4" placeholder="Type your message here" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-send w-100 shadow-sm">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://jsdelivr.net"></script>
+</body>
+</html>
+</body>
+</html>
